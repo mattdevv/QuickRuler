@@ -1,0 +1,9 @@
+{
+    "name": "com.mattdevv.quickruler",
+    "description": "Sceneview tool for quick measurements",
+    "version": "0.1.0",
+    "unity": "6000.0",
+    "displayName": "QuickRuler",
+    "dependencies": {
+    }
+}
