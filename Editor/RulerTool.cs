@@ -145,32 +145,6 @@ namespace mattdevv.Editor
                 
                 HandleInput(e);
             }
-            
-            Window();
-        }
-        
-        private Rect windowRect = new Rect(20, 20, 260, 140);
-        private void Window()
-        {
-            Handles.BeginGUI();
-
-            windowRect = GUI.Window(
-                123456,
-                windowRect,
-                DrawWindow,
-                "My Tool Settings"
-            );
-
-            Handles.EndGUI();
-        }
-        
-        void DrawWindow(int id)
-        {
-            EditorGUILayout.FloatField("Radius", 0);
-            EditorGUILayout.Toggle("Advanced", false);
-            GUILayout.Button("Reset");
-
-            GUI.DragWindow();
         }
 
         private void HandleInput(Event e)
